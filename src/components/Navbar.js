@@ -1,11 +1,12 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css'
 
-function Nav(){ 
-    return ( 
-        // <div>
-        //     <p> Say hello to my cat</p>
-        // </div>
+function Nav(props){ 
+    return (
+        <div> 
+        <div>
+            <p>{props.studentName}</p>
+        </div>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <a className="navbar-brand" href="#">Navbar</a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,6 +42,7 @@ function Nav(){
           </form>
         </div>
       </nav>
+      </div>
 
     );
 }
